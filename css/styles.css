@@ -84,3 +84,100 @@ html {
 }
 
 /* End of Main Section */
+
+/* Meal Section */
+
+.meal-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #998D4F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10rem, 0rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 30rem;
+    background-color: #5b532d;
+    position: relative;
+    top: -40rem; 
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2rem 2rem 2rem #000;
+    position: relative;
+    transform: rotateY(-05deg) skewX(.5deg);
+    transition: transform 0.5s ease-in-out box-shadow 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: rotateY(-05deg) skewX(.5deg) translateY(-1rem);
+    box-shadow: 2rem 2rem 2rem #000;
+
+}
+
+.card::before {
+    content: "";
+    height: 100%;
+    width: 1rem;
+    background-color: #44343d;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    transform: skewY(45deg);
+    transform-origin: right;
+    box-shadow: -0.1rem -0.1rem 0.1rem #551456;
+}
+
+.card::after {
+    content: "";
+    height: 1rem;
+    width: 100%;
+    background-color: #44343d;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    transform: skewX(45deg);
+    transform-origin: bottom;
+    box-shadow: -0.1rem -0.1rem 0.1rem #998D4F;
+
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-name {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #342f25;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    text-align: center;
+    text-shadow: 0.15rem 0.15rem 0.15rem #fff;
+}
+
+.card-btn {
+    width: 70%;
+    color: #342f25;
+    background-color: #79769a;
+    border-radius: 5rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+    border: none;
+    padding: .5rem 0;
+    cursor: pointer;
+    box-shadow: -0.2rem -0.2rem 0.2rem #fff;
+}
+/* End of Meal Section */
