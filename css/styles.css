@@ -94,6 +94,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    gap: 1rem;
 }
 
 .section-heading {
@@ -150,6 +151,34 @@ html {
 
 .main-section-icons i.change {
     opacity: 1; /* Only show the active icon */
+}
+
+.section-subtext {
+    font-size: 6rem;
+    color: var(--secondary-color);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-top: -15rem;
+    margin-bottom: 2rem;
+    text-shadow: .3rem .3rem .3rem var(--secondary-complementary-dark);
+    animation: flash-text .5s infinite;
+}
+
+/* Keyframes for Flashing Effect */
+@keyframes flash-text {
+    0% {
+        color: var(--secondary-color-dark); /* Start with the initial color */
+        text-shadow: 0.3rem 0.3rem 0.3rem var(--secondary-complementary-dark);
+    }
+    50% {
+        color: var(--secondary-complementary); /* Change to complementary color */
+        text-shadow: 0.3rem 0.3rem 0.3rem var(--secondary-color-dark);
+    }
+    100% {
+        color: var(--secondary-color-dark); /* Return to the initial color */
+        text-shadow: 0.3rem 0.3rem 0.3rem var(--secondary-complementary-dark);
+    }
 }
 
 /* End of Main Section */
@@ -253,6 +282,17 @@ html {
 .card-btn:hover {
     background-color: var(--primary-complementary-dark);
     box-shadow: -0.2rem -0.2rem 0.2rem var(--success-color-dark);
+}
+
+.meals-subtext {
+    font-size: 6rem;
+    color: var(--secondary-color);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-top: -40rem;
+    margin-bottom: 2rem;
+    text-shadow: .3rem .3rem .3rem var(--secondary-complementary-dark);
 }
 /* End of Meal Section */
 
