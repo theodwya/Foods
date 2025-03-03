@@ -413,3 +413,77 @@ html {
     transition: opacity 1s 1s;
 }
 /* End of Gallery Section */
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 30vh;
+    background-color: var(--secondary-background);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.footer-heading {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--primary-color);
+    text-shadow: .3rem .3rem .3rem var(--primary-complementary-dark);
+    text-transform: capitalize;
+
+}
+
+.footer-subtext {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-shadow: .3rem .3rem .3rem var(--primary-color);
+}
+
+.signup-form {
+    display: flex;
+    align-items: center;
+}
+
+.signup-form-input{
+    width: 25rem;
+    height: 5rem;
+    padding: 1rem;
+    border: 0.2rem solid var(--primary-color);
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    color: var(--text-color);
+}
+
+.signup-form-input::placeholder {
+    color: var(--text-color);
+}
+
+.signup-form-btn {
+    position: relative;
+    left: -4.5rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--secondary-complementary);
+    color: var(--primary-color-dark);
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 3rem;
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: var(--danger-color);
+    letter-spacing: 0.1rem;
+    border-top: 0.2rem solid var(--secondary-color-dark);
+    padding-top: 6rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* End of Footer */
