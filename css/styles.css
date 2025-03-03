@@ -284,6 +284,7 @@ html {
     width: 1rem;
     height: 0;
     background-color: var(--primary-complementary);
+    z-index: 10;
     transition: height 0.5s ease-in-out;
 }
 
@@ -315,6 +316,19 @@ html {
     0.5rem 0.5rem 0.1rem #FFB703, /* Yellow-gold for warm highlights */
     0.7rem 0.7rem 0.1rem #55A630, /* Green to balance */
     0.9rem 0.9rem 0.1rem #0077B6; /* Deep blue from primary site color */
+    transition: all 0.5s;
+
+}
+
+.gallery-link:hover .food-img{
+    box-shadow: 
+    1rem 1rem 0.1rem #D90429, /* Deep red from your site’s secondary color */
+    2rem 2rem 0.1rem #FFB703, /* Yellow-gold for warm highlights */
+    3rem 3rem 0.1rem #55A630, /* Green to balance */
+    4rem 4rem 0.1rem #0077B6; /* Deep blue from primary site color */
+    filter: blur(0.5rem);
+    opacity: 0.5;
+    transform: scale(1.1);
 
 }
 
@@ -329,6 +343,7 @@ html {
     color: var(--secondary-color-dark);
     width: 0;
     overflow: hidden;
+    white-space: nowrap;
     transition: width 0.5s ease-in-out;
 }
 
@@ -346,14 +361,15 @@ html {
     font-weight: 300;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    color: var(--primary-color-dark);
+    color: var(--text-color);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .gallery-link:hover .food-description {
     opacity: 1;
     visibility: visible;
+    transition: opacity 1s 1s;
 }
 /* End of Gallery Section */
